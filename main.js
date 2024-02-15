@@ -18,6 +18,7 @@ let mode = 'all'
 let filterList = []
 
 addButton.addEventListener('click', addTask)
+taskInput.addEventListener('keyup', enterKey)
 
 for(let i = 1; i<tabs.length; i++) {
   tabs[i].addEventListener('click', function(event){filter(event)})
