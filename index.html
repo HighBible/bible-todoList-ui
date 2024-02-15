@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>to-do-list</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>TO DO LIST</h1>
+    <section class="input-area">
+      <input type="text" id="task-input" onkeyup="enterKey()">
+      <button id="add-button">+</button>
+    </section>
+    <section class="task-area">
+      <div class="task-tabs">
+        <div id="under-line">
+
+        </div>
+        <div id="all">ALL</div>
+        <div id="ongoing">ONGOING</div>
+        <div id="done">DONE</div>
+      </div>
+      <div id="task-board">
+      </div>
+    </section>
+  </div>
+  <!-- <div id="test"><span>hi</span></div> -->
+  <!-- <div id="test"><span>hi</span></div> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+<script>
+  // console.log(document.getElementById('test').innerHTML)
+  // console.log(document.getElementById('test').textContent)
+
+  // document.getElementById('test').innerHTML = `<h1>Noona</h1>`
+  // document.getElementById('test').textContent = `<h1>Noona</h1>`
+</script>
+</html>

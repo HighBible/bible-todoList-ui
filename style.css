@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Bagel Fat One", system-ui, sans-serif ;
+}
+
+body {
+  margin: 0;
+background: url(./images/background.jpeg) 50% 0 /cover;
+  background-size: cover;
+}
+h1 {
+  text-align: center;
+  font-size: 7vw;
+}
+
+button {
+  border: none;
+  background: none;
+  /* border: 2px solid rgb(6, 46, 46); */
+  width: 80px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  background: url(./images/gridnote.avif) 0 10% / 100% 100%;
+  min-height: 100vh;
+  width: 70vw;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.input-area {
+  display: flex;
+  justify-content: center;
+}
+#add-button {
+  width: 50px;
+  vertical-align: middle;
+  margin-bottom: 10px;
+  font-size: 30px;
+  line-height: 100%;
+  cursor: pointer;
+}
+
+
+#task-input {
+  margin: 10px;
+  vertical-align: middle;
+  width: 40vw;
+  border: none;
+  border-bottom: 1px solid gray;
+  background: transparent;
+  font-size: 3vw;
+}
+
+#task-input:focus-visible {
+  outline: none;
+}
+
+.task-area{
+  /* border: 1px solid lightgray; */
+}
+
+.task-tabs {
+  display: flex;
+  /* border-bottom: 1px solid lightgray; */
+  position: relative;
+}
+
+.task-tabs div {
+  padding: 1em;
+  cursor: pointer;
+}
+
+#under-line {
+  height: 4px;
+  background: crimson;
+  border-radius: 20%;
+  position: absolute;
+  width: 66px;
+  left: 0px;
+  top: 52px;
+  padding: 0;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  gap: 1em
+}
+.btn_area {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+
+}
+
+.task-done {
+  text-decoration: line-through;
+  text-decoration-color: crimson;
+  text-decoration-thickness: 2px;
+  /* background: #ddd; */
+  flex-grow: 1;
+  height: 50px;
+  line-height: 50px;
+}
+
+
+
+.btn_check:hover {
+  background-color: rgb(32, 206, 32);
+  border-color: green;
+}
+
+.btn_undo:hover {
+  background-color: rgb(166, 166, 166);
+  border-color: grey;
+}
+
+.btn_delete {
+  background: url(./images/delete.png) no-repeat 50% 50%
+}
+.btn_delete:hover {
+  background-color: rgb(245, 92, 92);
+  border-color: brown;
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 700px;
+  }
+  h1 {
+    font-size: 70px;
+  }
+  #task-input {
+    width: 400px;
+    font-size: 30px;
+  }
+  
+  
+}
